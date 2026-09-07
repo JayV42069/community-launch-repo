@@ -35,8 +35,8 @@ This repository is the companion code for the free YouTube series **"Build a Tra
 
 ```bash
 # 1. Clone and install all dependencies (server + webapp workspaces)
-git clone https://github.com/deepcharts/education-boilerplate.git
-cd education-boilerplate
+git clone https://github.com/JayV42069/community-launch-repo.git
+cd community-launch-repo
 pnpm install
 
 # 2. (Optional) Build the C++ bridge
