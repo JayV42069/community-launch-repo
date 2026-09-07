@@ -23,7 +23,8 @@
     "test:auth": "node scripts/verify-ws-auth.js",
     "test:tenant": "node scripts/test-tenant-resolution.js",
     "pipeline": "node scripts/run_pipeline.js",
-    "pipeline:mt5": "node scripts/mt5_simulator.js"
+    "pipeline:mt5": "node scripts/mt5_simulator.js",
+    "bridge:dev": "bash scripts/bridge_dev.sh"
   },
   "engines": {
     "node": ">=18.0.0",

@@ -30,11 +30,14 @@ Thumbs.db
 Desktop.ini
 
 # Editor files
-.vscode/
+# .vscode/settings.json is committed as a presentation profile template
+# Individual developer preferences should go in .vscode/settings.local.json (git-ignored below)
 .idea/
 *.swp
 *.swo
 *~
+.vscode/settings.local.json
+.vscode/tasks.json
 
 # OS-generated files
 ehthumbs.db
