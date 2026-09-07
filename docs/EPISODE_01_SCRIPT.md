@@ -166,7 +166,7 @@ The entire stack — C++ bridge, Node relay, React frontend — is live in our G
 
 **[Screen: repo URL]**
 
-`github.com/deepcharts/education-boilerplate`
+`github.com/JayV42069/community-launch-repo`
 
 Clone it. Run `pnpm dev`. And next time your trading buddy complains about slippage?
 

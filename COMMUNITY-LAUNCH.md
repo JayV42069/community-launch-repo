@@ -1,10 +1,10 @@
-# Community Launch Blueprint: Education Boilerplate
+# Community Launch Blueprint: DeepCharts Core Bridge
 
 > Introductory module for the developer community launch of the DeepCharts education kit.
 
 ## 1. What This Is
 
-The `education-boilerplate/` package is a **stripped-down learning kit** that teaches
+The `community-launch-repo/` package is a **stripped-down learning kit** that teaches
 how to build the core data-pipeline of the DeepCharts Pro trading platform — the part
 that moves market data from MetaTrader 5 → C++ bridge → Node.js WebSocket relay →
 React candlestick chart.
@@ -18,7 +18,7 @@ heavily commented as a teaching example.
 ## 2. Repository Map
 
 ```
-education-boilerplate/
+community-launch-repo/
 ├── package.json              ← Root workspace: pnpm dev runs server + webapp
 ├── pnpm-workspace.yaml       ← Declares "server" and "webapp" workspaces
 ├── .env.example              ← Template for local configuration
@@ -65,8 +65,8 @@ education-boilerplate/
 
 ```bash
 # Clone + enter
-git clone <repo-url> education-boilerplate
-cd education-boilerplate
+git clone <repo-url>
+cd community-launch-repo
 
 # Install all dependencies (pnpm workspaces hoists server + webapp deps)
 pnpm install
@@ -147,7 +147,7 @@ gate and tenant resolution flow.
 
 ## 5. Auth Gate: How It Works
 
-The education-boilerplate mirrors the full platform's auth flow at a simplified level:
+The community-launch-repo mirrors the full platform's auth flow at a simplified level:
 
 ```
 ┌──────────┐                    ┌──────────────┐
@@ -276,7 +276,7 @@ If producing a companion video series, structure as follows:
 
 ### Getting Started
 1. Fork the repository
-2. `cd education-boilerplate && pnpm install`
+  2. `cd community-launch-repo && pnpm install`
 3. Make your changes
 4. Run `pnpm test:auth` to verify nothing breaks
 5. Open a PR with a clear description of what you're teaching

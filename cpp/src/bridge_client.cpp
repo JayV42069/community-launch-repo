@@ -25,7 +25,7 @@
  *   //   FileWrite(handle, json);  // handle from FileOpen() on TCP
  *
  * ─── Build ───
- *   pnpm run bridge:build       # from education-boilerplate/ root
+ *   pnpm run build:cpp           # from community-launch-repo/ root
  *
  * Then run:  ./cpp/build/bridge_client
  */
