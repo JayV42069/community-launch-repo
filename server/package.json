@@ -1,0 +1,16 @@
+{
+  "name": "education-boilerplate-server",
+  "version": "1.0.0",
+  "description": "Node.js WebSocket relay server for the education boilerplate",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build artifacts
+cpp/build/
+webapp/dist/
+webapp/.vite/
+webapp/node_modules/
+server/node_modules/
+
+# Environment files (local config — use .env.example as template)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+
+# Runtime artifacts
+*.pid
+*.sqlite
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-generated files
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE
+.cljs-cache/
+.Clover/
+.idea/
+.vscode/

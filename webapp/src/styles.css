@@ -1,0 +1,70 @@
+/* styles.css — minimal styles, no Tailwind in the edukit */
+
+:root {
+  --bg: #0a0a0e;
+  --panel: #14141a;
+  --accent: #00d4ff;
+  --text: #e0e0e0;
+  --text-dim: #888;
+  --bull: #00e676;
+  --bear: #ff5252;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Fira Code', ui-monospace, monospace;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 48px;
+  border-bottom: 1px solid #222;
+  background: var(--panel);
+}
+
+.header .title {
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.header .title .accent { color: var(--accent); }
+
+.status {
+  font-size: 12px;
+  padding: 0 16px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #1a1a1e;
+}
+
+.status .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bear);
+  display: inline-block;
+}
+
+.status .dot.connected { background: var(--bull); }
+
+.chart-container {
+  flex: 1;
+  padding: 16px;
+  overflow: hidden;
+}

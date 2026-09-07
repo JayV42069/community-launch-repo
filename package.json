@@ -1,0 +1,32 @@
+{
+  "name": "education-boilerplate",
+  "version": "1.0.0",
+  "description": "Quant-Dev educational boilerplate — stripped-down MT5 bridge + Node WS server + React candlestick chart. For learning how to build the full DeepCharts platform.",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": [
+    "server",
+    "webapp"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "ws": "^8.18.0"
+  },
+  "scripts": {
+    "dev": "concurrently -c \"auto\" \"pnpm dev:server\" \"pnpm dev:webapp\"",
+    "dev:server": "node server/index.js",
+    "dev:webapp": "pnpm -C webapp dev",
+    "build": "pnpm -r build",
+    "build:cpp": "cmake -S cpp -B cpp/build && cmake --build cpp/build --config Release",
+    "clean": "pnpm -r clean",
+    "test:auth": "node scripts/verify-ws-auth.js",
+    "test:tenant": "node scripts/test-tenant-resolution.js",
+    "pipeline": "node scripts/run_pipeline.js",
+    "pipeline:mt5": "node scripts/mt5_simulator.js"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
