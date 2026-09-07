@@ -49,21 +49,21 @@ pnpm dev
 - **WebSocket server**: `ws://localhost:8081`
 - **React frontend**: `http://localhost:3000`
 
-### Live Pipeline (Full Simulation)
+### Launching the Live Pipeline & UI
 
-To run the complete pipeline end-to-end with the MT5 simulator:
+To run the complete data pipeline (MT5 Simulator + C++ Bridge + Node Relay) alongside the React Canvas UI:
 
+**Terminal 1 (Backend Pipeline):**
 ```bash
-# Starts: MT5 simulator (:9001) → C++ bridge (:8080) → Node relay (:8081)
 pnpm run pipeline
 ```
 
-Then open `http://localhost:3000` in your browser — but you also need the frontend running:
-
+**Terminal 2 (Frontend App):**
 ```bash
-# In a separate terminal:
 pnpm dev:webapp
 ```
+
+*Note: Alternatively, running `pnpm dev` boots the Node WebSocket relay on `:8081` and webapp on `:3000` with mock data enabled whenever MT5 is offline.*
 
 ### C++ Bridge Only (Windows)
 
